@@ -12,8 +12,14 @@ import mealplanner
 import chatbox
 
 # mongo connection
+
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+mongodb_uri = os.getenv("MONGODB_URI")
 client = pymongo.MongoClient(
-    "mongodb+srv://sarthak0714:sarthak0714@cluster0714.9yk64zv.mongodb.net/?retryWrites=true&w=majority")
+    mongodb_uri)
 db = client['PYTHON_MPR']
 col = db["mpr"]
 email1 = "shri@gmail.com"
