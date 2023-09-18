@@ -1,0 +1,3 @@
+git remote add origin https://github.com/We-Go-Jim/we-go-jim.git
+git branch -M main
+git branch -M maingit branch -M main
